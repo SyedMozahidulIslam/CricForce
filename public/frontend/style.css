@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Navbar... */
+#navbar{
+  background: #f9f9f9;
+ 
+}
+#logo{
+  font-size: 36px;
+  font-weight: 550;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span{
+  color: #B70404;
+}
+.navbar-toggler span{
+  color: #B70404;
+}
+.navbar-nav{
+  margin-left: 20px;
+ 
+}
+.nav-item .nav-link{
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+  background: #B70404;
+  color: white;
+}
+#navbar form button{
+  background: #B70404;
+  color: white;
+  border: none;
+}
+
+
+ 
+ 
+
+/* Home Section... */
+.home{
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .content{
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5{
+  color: #ffff;
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+  color: #E384FF;
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.changecontent::after{
+  content: ' ';
+  color: #B70404;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+  0%{content: "France";}
+  10%{content: "Spain";}
+  20%{content: "United States";}
+  30%{content: "China";}
+  40%{content: "India";}
+  50%{content: "Pakistan";}
+  60%{content: "Italy";}
+  70%{content: "Turkey";}
+  80%{content: "Mexico";}
+  90%{content: "Germany";}
+  100%{content: "United kingdom";}
+} 
+.home .content p{
+  color: #00C4FF;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a{
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover{
+  background: #B70404;
+  color: white;
+}
+@media (max-width:850px){
+  .home{
+      background-position: 50%;
+  }
+}
+@media (max-width:450px){
+  .home .content h5{
+      font-size: 25px;
+  }
+  .home .content h1{
+      font-size: 38px;
+  }
+  .home .content p{
+      font-size: 13px;
+  }
+}
+
+
+/* Section Book Start */
+.book{
+  background: #f9f9f9;
+  padding: 70px;
+}
+.main-text h1{
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.main-text h1 span{
+  color: #B70404;
+}
+.book .card{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+  margin-top: 30px;
+}
+.book form input{
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+.book .submit{
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #B70404;
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.book .submit:hover{
+  width: 170px;
+}
+@media (max-width:765px){
+  .book{
+      padding: 0;
+  }
+  .main-text h1{
+      padding: 20px;
+  }
+}
+
+
+/* Section Packages Start */
+.packages{
+  background: white;
+  
+}
+.packages h2{
+  text-align: center;
+  color: #00C4FF;
+}
+.main-txt h1{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+  color: #B70404;
+}
+.packages .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+  border-radius: 5px;
+}
+.packages .card .card-body{
+  background: transparent;
+}
+.packages .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p{
+  font-size: 15px;
+}
+.checked{
+  color: #B70404;
+}
+.star i{
+  font-size: 15px;
+}
+.packages .card .card-body h6{
+  font-size: 20px;
+}
+.packages .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  background: #11009E;
+  color: white;
+  border-radius: 5px;
+}
+ 
+
+
+
+
+/* Section Services Start */
+.services{
+  background: white;
+  margin-top: 50px;
+}
+.services .card{
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.services .card i{
+  font-size: 80px;
+  text-align: center;
+  color: #11009E;
+  margin-top: 20px;
+}
+.services .card .card-body h3{
+  font-weight: 600;
+}
+.services .card .card-body{
+  text-align: center;
+}
+ 
+
+
+
+
+
+/* Section country Start */
+.gallary{
+  margin-top: 50px;
+}
+.gallary .card{
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.gallary .card img{
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.gallary .card img:hover{
+  transform: scale(1.1);
+}
+ 
+
+
+
+
+/* About Start */
+.about{
+  padding: 50px;
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.about .card{
+  border-radius: 10px;
+}
+.about .card img{
+  border-radius: 10px;
+}
+.about h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p{
+  font-weight: 500;
+}
+#about-btn{
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #B70404;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover{
+  width: 170px;
+}
+@media (max-width:765px){
+  .about{
+      padding: 0;
+  }
+}
+ 
+
+
+/* Footer Start */
+#footer{
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #2B3940; /* Change the background color here */
+  color: white; /* Optionally change the text color to white for better visibility */
+}
+#footer h1{
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+  color:  #850303;
+}
+.social-links i{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background:rgb(184, 13, 13);
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover{
+  background: #B70404;
+}
+ 
+
+
+/*for testmonial*/
+.client {
+  width: 100%;
+  height: 60%;
+  background: #E8AA42;  /* fallback for old browsers */
+  
+ 
+}
+
+.carousel-icon i {
+font-size: 5rem;
+color:  black;
+}
+
+.carousel-item i {
+font-size: 1.6rem;
+color: black;
+}
+
+.t-card {
+padding: 1.8125rem 1.125rem;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 1.25rem;
+color: yellow;
+height: auto;
+}
+
+.arrow-down {
+width: 50px;
+height: 50px;
+border-left: 1.5625rem solid transparent;
+border-right: 1.5625rem solid transparent;
+border-top: 1.25rem solid black;
+}
+ 
