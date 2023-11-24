@@ -1,0 +1,1 @@
+<h3>CricForce</h3><?php /**PATH C:\laragon\www\CricForce\resources\views/components/application-logo.blade.php ENDPATH**/ ?>
